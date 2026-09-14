@@ -15,10 +15,10 @@ int main()
 
 
  M:   cout<<"-----------------------Main menu--------------------"<<endl;
-
+    
+cout<<"1:register  2:display record  3:enter marks  4:calculate result"<<endl;
     cout<<"Enter Your Choice:";
     cin>>choice;
-
     switch(choice)
     {
     case 1:
