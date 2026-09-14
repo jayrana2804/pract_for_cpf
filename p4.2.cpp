@@ -56,7 +56,7 @@ int main()
         cout<<endl;
         cout<<"Performance remark :Needs Improvement";
     }
-    else(percentage<40)
+    else
     {
         cout<<"Result        :fail";
         cout<<endl;
