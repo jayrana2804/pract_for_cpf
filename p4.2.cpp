@@ -19,17 +19,6 @@ int main()
     cout<<"****************************************************"<<endl;
     cout<<"Academic result"<<endl;
     cout<<"****************************************************"<<endl;
-    if(percentage<=40)
-    {
-        cout<<"Result        :fail";
-        cout<<endl;
-        cout<<"better luck next time";
-    }
-    else
-    {
-        cout<<"Result      :pass";
-        cout<<endl;
-    }
 
     if(percentage>=90 && percentage<=100)
     {
@@ -61,13 +50,18 @@ int main()
         cout<<endl;
         cout<<"Performance remark :Satisfactory";
     }
-    else if(percentage>40 && percentage<49)
+    else if(percentage=>40 && percentage<49)
     {
         cout<<"Grade :C";
         cout<<endl;
         cout<<"Performance remark :Needs Improvement";
     }
-    else
+    else(percentage<40)
+    {
+        cout<<"Result        :fail";
+        cout<<endl;
+        cout<<"better luck next time";
+    }
     return 0;
 }
 
