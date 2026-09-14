@@ -3,53 +3,59 @@
 using namespace std;
 int main()
 {
-        cout<<"****************************************************"<<endl;
-        cout<<"STUDENT RECORD MANAGMENT SYSTEM"<<endl;
-        cout<<"****************************************************"<<endl;
-        cout<<"Software version"<<setw(10)<<":"<<"1.0"<<endl;
-        cout<<"Enrollment Number"<<setw(9)<<":"<<"26TCEYID"<<endl;
-        cout<<"Student Name"<<setw(14)<<":"<<"Jay rana"<<endl;
-        cout<<"Branch"<<setw(20)<<":"<<"CE"<<endl;
-        cout<<"Semester"<<setw(18)<<":"<<"1st"<<endl;
-        cout<<"Mobile number"<<setw(13)<<":"<<"9999999999"<<endl;
+    char enrollment_number[8],student_name[25],branch[15];
+    int mobile_number,semester;
+    int total_marks,m1,m2,m3;
+    float percentage,average;
+    cout<<"Software Version"<<setw(12)<<":"<<"1.2"<<endl;
+    cout<<"********************************************************"<<endl;
+    cout<<"                STUDENT REGISTRATION"<<endl;
+    cout<<"********************************************************"<<endl;
 
-int m1,m2,m3;
-float percentage;
-        cout<<"****************************************************"<<endl;
-        cout<<"Academic information"<<endl;
-        cout<<"****************************************************"<<endl;
-        cout<<"enter the marks of three subjects:";
-        cin>>m1>>m2>>m3;
-    if(m1<0 || m1>100 || m2<0 || m2>100 || m3<0 ||m3>100)
-    {
-        cout<<"error:invalid input";
-    }
-    else
-    {
-        percentage=(m1+m2+m3)/3.0;
-        if(percentage>90)
-        {
-            cout<<"Class:Distinction";
-        }
-        else if (percentage>=75)
-        {
-            cout<<"Class:first";
-        }
-        else if(percentage>=60)
-        {
-             cout<<"Class:second";
-        }
-        else if(percentage>=45)
-        {
-            cout<<"Class:pass";
-        }
-        else
-        {
-            cout<<"Class:fail";
-        }
+    cout<<" Enter Enrollment Number:";
+    cin>>enrollment_number;
+    cin.ignore();
+    cout<<" Enter Student Name:";
+    cin.getline(student_name,25);
 
+    cout<<" Enter Branch:";
+    cin>>branch;
+    cout<<" Enter semester:";
+    cin>>semester;
+    cout<<" Enter Mobile Number:";
+    cin>>mobile_number;
 
-      }
+    cout<<"-----------------------------------------------------------"<<endl;
+    cout<<"                  Academic Information"<<endl;
+    cout<<"-----------------------------------------------------------"<<endl;
+
+    cout<<"Enter Mathamatic Marks:";
+    cin>>m1;
+    cout<<"Enter Physics Marks:";
+    cin>>m2;
+    cout<<"Enter programming foundation Marks:";
+    cin>>m3;
+    cout<<"-----------------------------------------------------------"<<endl;
+    cout<<"                  Academic Summary"<<endl;
+    cout<<"-----------------------------------------------------------"<<endl;
+    total_marks=m1+m2+m3;
+    average=(m1+m2+m3)/3;
+    percentage=(m1+m2+m3)/3;
+    cout<<"Total Marks:"<<total_marks<<endl;
+    cout<<"Average Marks:"<<average<<endl;
+    cout<<"Percentage:"<<percentage<<endl;
+
+    cout<<"********************************************************"<<endl;
+    cout<<"                 STUDENT INFORMATION"<<endl;
+    cout<<"********************************************************"<<endl;
+    cout<<" Enrollment Number         :"<<enrollment_number<<endl;
+    cout<<" Student Name              :"<<student_name<<endl;
+    cout<<" Branch                    :"<<branch<<endl;
+    cout<<" semester                  :"<<semester<<endl;
+    cout<<" Mobile Number             :"<<mobile_number<<endl;
+       
+      
+       
             return 0;
 }
 
