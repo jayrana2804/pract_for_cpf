@@ -28,28 +28,32 @@ int main()
     // Indirect refrencing
 
     cout<<"Stored value :"<<x<<endl;
-     p=&x;
-   *p=30;
+    p=&x;
+    *p=30;
 
     cout<<"Modified value :"<<x<<endl;
     cout<<"\n --------------------------------------------------------"<<endl;
-   // sequential data collection
-   int j[5]={10,20,30,40,50};
-   cout<<"Array using index:"<<endl;
-   for(int i=0;i<5;i++){
+    // sequential data collection
+    int j[5]= {10,20,30,40,50};
+    cout<<"Array using index:"<<endl;
+    for(int i=0; i<5; i++)
+    {
         cout<<j[i]<<" ";
-   }
-   cout<<endl;
+    }
+    cout<<endl;
     cout<<"Array using address based access"<<endl;
-    for(int i=0;i<5;i++){
+    for(int i=0; i<5; i++)
+    {
         cout<<*(j+i)<<" ";
     }
-                cout<<"\n --------------------------------------------------------"<<endl;
-        cout<<"Observation"<<endl;
-        cout<<endl;
-        cout<<"Both Approaches access the same memory locations."<<endl;
+    cout<<"\n --------------------------------------------------------"<<endl;
+    cout<<"Observation"<<endl;
+    cout<<endl;
+    cout<<"Both Approaches access the same memory locations."<<endl;
 
     return 0;
 
 }
+
+
 
